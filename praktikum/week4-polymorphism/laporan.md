@@ -152,31 +152,25 @@ public class MainPolymorphism {
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+  
+![Screenshot hasil](screenshots/Hasil_week4.png)
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
----
+1. Cara kerja kode: Kode berjalan dengan menerapkan polymorphism, di mana metode dipanggil melalui kelas induk tetapi dijalankan sesuai implementasi objek turunan pada saat runtime.
+2. Perbedaan dengan minggu sebelumnya: Minggu sebelumnya menggunakan pendekatan statis dan pemanggilan metode spesifik, sedangkan minggu ini menggunakan polymorphism sehingga kode lebih fleksibel dan mudah dikembangkan.
+3. Kendala dan solusi: Kendala berupa kesulitan memahami alur eksekusi runtime dan kesalahan overriding, yang diatasi dengan pengecekan struktur kelas dan penyesuaian deklarasi metode.
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
-
+*Dengan menerapkan konsep polymorphism, program menjadi lebih fleksibel, terstruktur, dan mudah dikembangkan karena satu metode dapat digunakan untuk berbagai objek dengan perilaku yang berbeda.*
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+1. Apa perbedaan overloading dan overriding?
+**Jawaban**: Overloading adalah penggunaan nama method yang sama dalam satu kelas dengan parameter yang berbeda dan ditentukan saat compile time, sedangkan overriding adalah pendefinisian ulang method di kelas turunan dengan signature yang sama dan ditentukan saat runtime.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Bagaimana Java menentukan method mana yang dipanggil dalam dynamic binding?
+**Jawaban**:Java menentukan method yang dipanggil berdasarkan tipe objek sebenarnya pada saat runtime, bukan berdasarkan tipe referensinya, sehingga method yang dijalankan adalah milik kelas turunan yang mengoverride method tersebut.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Berikan contoh kasus polymorphism dalam sistem POS selain produk pertanian.
+**Jawaban**: Dalam sistem POS restoran, method hitungHarga() dapat digunakan untuk berbagai jenis menu seperti makanan utama, minuman, dan paket promo, di mana setiap jenis menu memiliki cara perhitungan harga yang berbeda namun dipanggil melalui satu referensi yang sama.
